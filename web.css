@@ -1,0 +1,75 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+/* Navbar after scrolling */
+#navbar.scrolled {
+    background: #1e293b;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    padding: 12px 40px;
+}
+
+/* Logo */
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menu */
+#navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+#navbar ul li a:hover {
+    background: #38bdf8;
+    color: #0f172a;
+    transform: translateY(-2px);
+}
+
+/* Demo sections */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #0ea5e9, #6366f1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.content {
+    padding: 50px;
+}
